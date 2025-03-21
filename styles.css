@@ -1,0 +1,160 @@
+/* Base styles: MOBILE FIRST */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Google Meet Logo */
+.logo img {
+    height: 40px;
+}
+.top-icons img {
+    width: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.time {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.content h2 {
+    font-size: 22px;
+    color: #202124;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.buttons button, .buttons input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.new-meeting {
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+}
+
+.join {
+    background-color: #e8eaed;
+    color: #202124;
+    cursor: pointer;
+}
+
+/* Image section */
+.image-section img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Styles for the link section */
+.link-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Link icon */
+.link-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.link-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #202124;
+}
+
+.link-description {
+    font-size: 14px;
+    color: #5f6368;
+    margin: 5px 0;
+}
+
+/* TABLETS & LARGER SCREENS */
+@media (min-width: 768px) {
+    main {
+        max-width: 600px;
+        padding: 30px;
+    }
+    .buttons {
+        flex-direction: row;
+    }
+    .buttons input {
+        flex-grow: 1;
+    }
+}
+
+/* DESKTOP SCREENS */
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    main {
+        flex-direction: row;
+        width: 80%;
+        max-width: 1000px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .image-section img {
+        width: 350px;
+    }
+}
